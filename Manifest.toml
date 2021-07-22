@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.7.0-beta3"
+julia_version = "1.7.0-beta3.0"
 manifest_format = "2.0"
 
 [[deps.AbstractTrees]]
@@ -110,6 +110,12 @@ deps = ["InteractiveUtils", "JuliaInterpreter", "LoweredCodeUtils", "MacroTools"
 git-tree-sha1 = "2df2b1cd83a080e5f85a05389d2880ddf7562dae"
 uuid = "c3a54625-cd67-489e-a8e7-0a5a0ff4e31b"
 version = "0.4.4"
+
+[[deps.JETTest]]
+deps = ["JET", "Test"]
+git-tree-sha1 = "1f585a307beb8fdb3d7cd4c7a628ef81cf113ca6"
+uuid = "a79fb612-4a80-4749-a9bd-c2faab13da61"
+version = "0.1.4"
 
 [[deps.JLLWrappers]]
 deps = ["Preferences"]

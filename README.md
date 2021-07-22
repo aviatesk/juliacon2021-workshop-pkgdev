@@ -17,7 +17,16 @@ This workshop is aimed at experienced Julia developers.
 For this workshop, **we recommend you use Julia v1.7 or higher**.
 You can download [a prebuilt v1.7 binary](https://julialang.org/downloads/#upcoming_release) or [an nightly build](https://julialang.org/downloads/nightlies/). You can also use Julia [built from the latest source](https://github.com/JuliaLang/julia#building-julia).
 
-If you've installed an appropriate Julia version and cloned this repository, you can install the required packages with the following command:
+If you've installed an appropriate Julia version, clone this repository and initialize submodules:
+```bash
+$ git clone https://github.com/aviatesk/juliacon2021-workshop-pkgdev
+
+$ cd juliacon2021-workshop-pkgdev
+
+$ git submodule init && git submodule update
+```
+
+Finally, install the required packages with the following command:
 ```julia
 julia> pwd()    # check whether you're in this folder (if not, navigate here with `cd`)
 "/home/user/path/to/juliacon2021-workshop-pkgdev"
@@ -29,7 +38,7 @@ julia> Pkg.activate(@__DIR__)
 julia> Pkg.instantiate()
 ```
 
-Then you can run the workshop notebooks with:
+Now you can run the workshop notebooks with:
 ```julia
 julia> using IJulia
 
@@ -43,7 +52,7 @@ julia> IJulia.notebook(; dir=@__DIR__)
 
 - (Tim, 25min) [Introduction: a tutorial on Julia internals](./Introduction.ipynb) (methods, types, MethodInstances & specialization, dispatch, backedges, invalidation, precompilation).  Includes a few demos of [MethodAnalysis.jl](https://github.com/timholy/MethodAnalysis.jl)
 - Break: 5min
-- (Shuhei, 45min) [JET.jl](https://github.com/aviatesk/JET.jl)
+- (Shuhei, 45min) [JET.jl Workshop](./JET.ipynb): Explanations of the basic ideas of [JET.jl](https://github.com/aviatesk/JET.jl), and demos of its usages
 - Break: 10min
 - (Tim, 30min) [SnoopCompile.jl](https://github.com/timholy/SnoopCompile.jl): inference-profiling, profile-guided despecialization, precompilation
 - Break: 5min
