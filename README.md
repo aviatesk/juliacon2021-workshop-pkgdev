@@ -1,16 +1,14 @@
 # Julia2021 Workshop – Package development: improving engineering quality & latency
 
 - Presenters: [Tim Holy](https://github.com/timholy), [Shuhei Kadowaki](https://github.com/aviatesk)
-- YouTube Link: <https://www.youtube.com/watch?v=wXRMwJdEjX4>
-- pretalx Link: <https://pretalx.com/juliacon2021/talk/VY9UVX/>
+- YouTube link: <https://www.youtube.com/watch?v=wXRMwJdEjX4>
+- pretalx link: <https://pretalx.com/juliacon2021/talk/VY9UVX/>
 
 ## Abstract
 
 Julia holds immense promise for a composable package ecosystem. Potential obstacles to achieving this promise include missing methods for unanticipated types, unwitting type-piracy, poor performance due to inference failures, method ambiguities, and latency due to long compilation times and/or invalidation of previously-compiled code.
 
-This workshop will tutor developers on the use of some recently-developed tools for detecting, diagnosing, and fixing such problems.
-
-This workshop will tutor developers on the use of some of the tools available for improving package quality and reducing latency. We will begin by summarizing the factors that influence dispatch, inference, latency, and invalidation, and how monitoring inference provides a framework for detecting problems before or as they arise. We will then tutor attendees in the use of tools like MethodAnalysis, JET, Cthulhu, and SnoopCompile to discover, analyze, and fix detected problems in package implementation. We will also show how in addition to improving robustness, such steps can often streamline design and reduce latency.
+This workshop will tutor developers on the use of some of the tools available for improving package quality and reducing latency. We will begin by summarizing the factors that influence dispatch, inference, latency, and invalidation, and how monitoring inference provides a framework for detecting problems before or as they arise. We will then tutor attendees in the use of tools like [MethodAnalysis](https://github.com/timholy/MethodAnalysis.jl), [JET](https://github.com/aviatesk/JET.jl), [Cthulhu](https://github.com/JuliaDebug/Cthulhu.jl), and [SnoopCompile](https://github.com/timholy/SnoopCompile.jl) to discover, analyze, and fix detected problems in package implementation. We will also show how in addition to improving robustness, such steps can often streamline design and reduce latency.
 
 This workshop is aimed at experienced Julia developers.
 
