@@ -12,15 +12,18 @@ This workshop will tutor developers on the use of some recently-developed tools 
 
 This workshop will tutor developers on the use of some of the tools available for improving package quality and reducing latency. We will begin by summarizing the factors that influence dispatch, inference, latency, and invalidation, and how monitoring inference provides a framework for detecting problems before or as they arise. We will then tutor attendees in the use of tools like MethodAnalysis, JET, Cthulhu, and SnoopCompile to discover, analyze, and fix detected problems in package implementation. We will also show how in addition to improving robustness, such steps can often streamline design and reduce latency.
 
-This workshop is aimed at experienced Julia developers. Registrants are encouraged to submit nominations prior to the workshop for packages to use as demonstrations of these tools.
+This workshop is aimed at experienced Julia developers.
 
 ## Prerequisites
 
 For this workshop, **we recommend you use Julia v1.7 or higher**.
 You can download [a prebuilt v1.7 binary](https://julialang.org/downloads/#upcoming_release) or [an nightly build](https://julialang.org/downloads/nightlies/). You can also use Julia [built from the latest source](https://github.com/JuliaLang/julia#building-julia).
 
-If you've installed an appropriate Julia version, install the required packages with the following command:
+If you've installed an appropriate Julia version and cloned this repository, you can install the required packages with the following command:
 ```julia
+julia> pwd()    # check whether you're in this folder (if not, navigate here with `cd`)
+"/home/user/path/to/juliacon2021-workshop-pkgdev"
+
 julia> using Pkg
 
 julia> Pkg.activate(@__DIR__)
@@ -40,10 +43,12 @@ julia> IJulia.notebook(; dir=@__DIR__)
 
 ## Workshop Outline
 
-- (Tim) [Introduction](./Introduction.ipynb) (~15min presentation, 10min exercises & questions): methods, types, method instances & specialization, and MethodAnalysis.jl.
+- (Tim, 25min) [Introduction: a tutorial on Julia internals](./Introduction.ipynb) (methods, types, MethodInstances & specialization, dispatch, backedges, invalidation, precompilation).  Includes a few demos of [MethodAnalysis.jl](https://github.com/timholy/MethodAnalysis.jl)
 - Break: 5min
-- (Shuhei) JET (~45min for both description and participant exercises)
+- (Shuhei, 45min) [JET.jl](https://github.com/aviatesk/JET.jl)
 - Break: 10min
-- (Tim) Lowered & typed code (20 min)
-- (Shuhei) Cthulhu: overview and exercises (15 min for overview, 15 min for exercises and questions)
-- (Tim) SnoopCompile: inference-profiling, profile-guided despecialization, backedges, precompilation (45min interspersed descriptions, exercises, & questions)
+- (Tim, 30min) [SnoopCompile.jl](https://github.com/timholy/SnoopCompile.jl): inference-profiling, profile-guided despecialization, precompilation
+- Break: 5min
+- (Tim, 15min): Lowered & typed code
+- (Shuhei, 30min) [Cthulhu.jl](https://github.com/JuliaDebug/Cthulhu.jl)
+- (Tim, 15min): SnoopCompile & Cthulhu integration
