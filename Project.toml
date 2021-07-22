@@ -8,6 +8,6 @@ SnoopCompile = "aa65fe97-06da-5843-b5b1-d5d13cad87d2"
 
 [compat]
 AbstractTrees = "0.3"
-JET = "0.4"
+JET = "0.4.4"
 MethodAnalysis = "0.4"
 SnoopCompile = "2.6"
