@@ -40,7 +40,7 @@ julia> IJulia.notebook(; dir=@__DIR__)
 
 ## Workshop Outline
 
-- (Tim) Introduction (~15min presentation, 10min exercises & questions): methods, types, method instances & specialization, and MethodAnalysis.jl.
+- (Tim) [Introduction](./Introduction.ipynb) (~15min presentation, 10min exercises & questions): methods, types, method instances & specialization, and MethodAnalysis.jl.
 - Break: 5min
 - (Shuhei) JET (~45min for both description and participant exercises)
 - Break: 10min
