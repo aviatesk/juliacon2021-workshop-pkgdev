@@ -49,4 +49,4 @@ julia> IJulia.notebook(; dir=@__DIR__)
 - Break: 5min
 - (Tim, 15min): [Lowered & typed code](./LoweredTypedCode.ipynb)
 - (Shuhei, 30min) [Cthulhu.jl workshop](./Cthulhu.ipynb): Gives an overview of Cthulhu and shows how we can use it to understand behaviors of Julia compiler
-- (Tim, 15min): SnoopCompile & Cthulhu integration
+- (Tim, 15min): [SnoopCompile & Cthulhu integration](./cthulhu_ascend.jl)
