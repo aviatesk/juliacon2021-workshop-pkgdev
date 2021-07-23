@@ -136,9 +136,9 @@ version = "1.5.2"
 
 [[deps.Cthulhu]]
 deps = ["CodeTracking", "FoldingTrees", "InteractiveUtils", "REPL", "UUIDs", "Unicode"]
-git-tree-sha1 = "aa7182bb2945bd745e999c1a4abfdb0be6d4fc6c"
+git-tree-sha1 = "6f2ecfbf33918fb9a23d31ec6ce41a632b798360"
 uuid = "f68482b8-f384-11e8-15f7-abe071a5a75f"
-version = "2.0.1"
+version = "2.1.0"
 
 [[deps.DataAPI]]
 git-tree-sha1 = "ee400abb2298bd13bfc3df1c412ed228061a2385"
