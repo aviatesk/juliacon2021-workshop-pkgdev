@@ -47,6 +47,6 @@ julia> IJulia.notebook(; dir=@__DIR__)
 - Break: 10min
 - (Tim, 30min) [SnoopCompile.jl](https://github.com/timholy/SnoopCompile.jl): inference-profiling, profile-guided despecialization, precompilation
 - Break: 5min
-- (Tim, 15min): Lowered & typed code
+- (Tim, 15min): [Lowered & typed code](./LoweredTypedCode.ipynb)
 - (Shuhei, 30min) [Cthulhu.jl](https://github.com/JuliaDebug/Cthulhu.jl)
 - (Tim, 15min): SnoopCompile & Cthulhu integration
