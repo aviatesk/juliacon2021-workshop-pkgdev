@@ -107,9 +107,9 @@ uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.JET]]
 deps = ["InteractiveUtils", "JuliaInterpreter", "LoweredCodeUtils", "MacroTools", "Pkg", "Revise"]
-git-tree-sha1 = "2df2b1cd83a080e5f85a05389d2880ddf7562dae"
+git-tree-sha1 = "5a1f91437f0144bdd9371769072105741ab67032"
 uuid = "c3a54625-cd67-489e-a8e7-0a5a0ff4e31b"
-version = "0.4.4"
+version = "0.4.5"
 
 [[deps.JETTest]]
 deps = ["JET", "Test"]
