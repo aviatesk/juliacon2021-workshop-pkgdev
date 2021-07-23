@@ -17,16 +17,7 @@ This workshop is aimed at experienced Julia developers.
 For this workshop, **we recommend you use Julia v1.7 or higher**.
 You can download [a prebuilt v1.7 binary](https://julialang.org/downloads/#upcoming_release) or [an nightly build](https://julialang.org/downloads/nightlies/). You can also use Julia [built from the latest source](https://github.com/JuliaLang/julia#building-julia).
 
-If you've installed an appropriate Julia version, clone this repository and initialize submodules:
-```bash
-$ git clone https://github.com/aviatesk/juliacon2021-workshop-pkgdev
-
-$ cd juliacon2021-workshop-pkgdev
-
-$ git submodule init && git submodule update
-```
-
-Finally, install the required packages with the following command:
+If you've installed an appropriate Julia version, clone this repository and install the required packages with the following commands:
 ```julia
 julia> pwd()    # check whether you're in this folder (if not, navigate here with `cd`)
 "/home/user/path/to/juliacon2021-workshop-pkgdev"
