@@ -15,7 +15,7 @@ SnoopCompile = "aa65fe97-06da-5843-b5b1-d5d13cad87d2"
 
 [compat]
 AbstractTrees = "0.3"
-Cthulhu = "2"
+Cthulhu = "2.1"
 JET = "0.4.5"
 MacroTools = "0.5.6"
 MethodAnalysis = "0.4"
