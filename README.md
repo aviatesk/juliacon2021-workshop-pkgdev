@@ -29,6 +29,13 @@ julia> Pkg.activate(@__DIR__)
 julia> Pkg.instantiate()
 ```
 
+If you have any errors involving PyPlot or PyCall, try this:
+
+```julia
+julia> ENV["PYTHON"]=""
+julia> Pkg.build("PyCall")
+```
+
 Now you can run the workshop notebooks with:
 ```julia
 julia> using IJulia
