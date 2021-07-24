@@ -42,11 +42,11 @@ julia> IJulia.notebook(; dir=@__DIR__)
 ## Workshop Outline
 
 - (Tim, 25min) [Introduction: a tutorial on Julia internals](./Introduction.ipynb) (methods, types, MethodInstances & specialization, dispatch, backedges, invalidation, precompilation).  Includes a few demos of MethodAnalysis.jl
-- Break: 5min
+- Q&A
 - (Shuhei, 45min) [JET.jl workshop](./JET.ipynb): Explanations of the basic ideas of JET, and demos of its usages
-- Break: 10min
+- Q&A
 - (Tim, 30min) [SnoopCompile workshop 1](./SnoopCompileBasics.ipynb): inference-profiling, profile-guided despecialization, precompilation
-- Break: 5min
+- Q&A
 - (Tim, 15min): [Lowered & typed code](./LoweredTypedCode.ipynb)
 - (Shuhei, 30min) [Cthulhu.jl workshop](./Cthulhu.ipynb): Gives an overview of Cthulhu and shows how we can use it to understand behaviors of Julia compiler
 - (Tim, 15min): [SnoopCompile & Cthulhu integration](./cthulhu_ascend.jl)
