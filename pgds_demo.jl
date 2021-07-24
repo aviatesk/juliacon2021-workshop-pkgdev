@@ -1,6 +1,7 @@
 using SnoopCompile
 using StaticArrays
 using PyPlot: PyPlot, plt
+PyPlot.pygui(true)               # force plotting in an interactive window
 using LinearAlgebra
 using Profile
 
@@ -27,4 +28,6 @@ Profile.clear()
 profs = Profile.fetch()
 
 mrefd, axd = pgdsgui(tinffd, profd)
+axd.set_title("Array")
 mrefs, axs = pgdsgui(tinffs, profs)
+axs.set_title("StaticArrays")
